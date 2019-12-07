@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+
+<table class="borde">
+  <tbody>
+<tr>
+  <td>
+    <!-- tabla 1 -->
+      <table>
+          <tbody>
+            <tr>
+              <td>
+                <p>Tratamiento: *</p>
+                <input type="radio" name="b1" value="hm" required />Sr.
+                <input type="radio" name="b1" value="m" required />Sra.
+              </td>
+              <td>
+                <p>Nombre: *</p>
+                <input type="text" name="nombre" required />
+              </td>
+
+              <td>
+                <p>Apellido1: *</p>
+                <input type="text" name="apellido1" required />
+              </td>
+              <td>
+                <p>Apellido2:</p>
+                <input type="text" name="apellido2" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Tipo Doc: *</p>
+                <select name="menu">
+                  <option value="DNI" selected>DNI</option>
+                  <option value="CIF">CIF</option>
+                </select>
+              </td>
+              <td>
+                <p>Nº Doc: *</p>
+                <input type="text" name="doc" required />
+              </td>
+              <td>
+                <p>Fecha de nacimiento: *</p>
+                <input type="date" name="fecha" required/>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <p>País de nacimiento: *</p>
+              <select name="menu" >
+                  <option value="country1" required selected>ESPAÑA</option>
+                  <option value="country2">PORTUGAL</option>
+              </td>
+              <td>
+                <p>Nacionalidad: *</p>
+                  <select name="menu" >
+                      <option value="country1n" required selected>ESPAÑA</option>
+                      <option value="country2n">PORTUGAL</option>
+             </td>
+              <td>
+                <p>Segunda nacionalidad:</p>
+                  <select name="menu" >
+                      <option value="country1n2"  selected>Ninguna</option>
+                      <option value="country2n2">ESPAÑA</option>
+             </td>
+              <td>
+                <p>País residencia fiscal: *</p>
+                  <select name="menu" >
+                      <option value="country1n" required selected>ESPAÑA</option>
+                      <option value="country2n">PORTUGAL</option>
+             </td>
+            </tr>
+            <tr>
+              <td><p>Trabajo: *</p>
+                <select name="menu">
+                    <option value="work1"  required selected></option>
+                    <option value="work2">Si</option>
+                    <option value="work2">No</option>
+                  </td>
+              <td><p>Tipo de Actividad: *</p><select name="menu">
+                  <option value="work1a"  required selected></option>
+                  <option value="work2a">Tareas hogar</option>
+                  <option value="work3a">Estudiante</option>
+                  <option value="work4a">Desempleado</option>
+                  <option value="work5a">Jubilado</option>
+                  <option value="work6a">Pensionista</option>
+                </td>
+              <td><p>Sector Profesional: *</p><select name="menu">
+                  <option value="work1p"  required selected></option>
+                  <option value="work2p">No trabaja</option>
+                  <option value="work3p">Banca</option>
+                  <option value="work4p">Construcción</option>
+                  <option value="work5p">Energia</option>
+                  <option value="work6p">Industria</option>
+                  <option value="work7p">Recursos humanos</option>
+                  <option value="work8p">Servicios</option>
+                </td>
+                <td><p>Empresa: *</p>
+                  <input type="text" name="empresa" required />
+                </td>
+            </tr>
+            <tr>
+              <td><p>Proposito de la cuenta: *</p><select name="menu">
+                  <option value="prop1"  required selected>Ahorro</option>
+                  <option value="prop2">Plan jubilación</option>
+                </td>
+              <td><p>Origen de sus ahorros: *</p><select name="menu">
+                  <option value="orig1"  required selected>Nómina o pensión</option>
+                  <option value="orig2">Nómina</option>
+                  <option value="orig3">Pensión</option>
+                </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Fin tabla 1 -->
+  </td>
+</tr>
+<tr>
+    <td>
+       <!-- tabla 2 -->
+        <table class="margen2">
+            <tbody>
+              <tr>
+              <td><p>Tipo de vía: *</p><select name="menu">
+                  <option value="dir1"  required selected>Calle</option>
+                  <option value="dir2">Avenida</option>
+                </td>
+              <td colspan="4"><p>Dirección: *</p>
+                <input type="text" name="direccion" size="50" required />
+              </td>
+              <td><p>Número: *</p>
+                <input type="text" name="Número" size="3" required />
+              </td>
+              <td><p>Piso: </p>
+                <input type="text" name="piso" size="3"/>
+              </td>
+              </tr>
+              <tr>
+                  <td><p>Urb./Pol./Otros </p>
+                    <input type="text" name="otros" /></td>
+                  <td colspan="2"><p>Localidad: *</p>
+                    <input type="text" name="localidad" required/></td>
+                  <td colspan="2"><p>Provincia: *</p>
+                    <input type="text" name="provincia" required/></td>
+                  <td colspan="2"><p>Código Postal: *</p>
+                    <input type="text" name="cp" required/></td>
+              </tr>
+              <tr>
+                  <td><p>Teléfono móvil: *</p>
+                    <input type="text" name="telf1" required/></td>
+                  <td colspan="2"><p>Teléfono particular:</p>
+                    <input type="text" name="telf2" required/></td>
+                  <td colspan="4"><p>Dirección de e-mail: *</p><input type="email" name="correo" size="50"></td>
+                </tr>
+            </tbody>
+          </table>
+          <hr>
+          <!-- Fin tabla 2 -->
+          <table class="bordess">
+            <tr>
+              <td>
+                <p>Para ofrecerle un mejor servicio nos seria util si posee en otra entidad:</p>
+                <p><input type="checkbox" name="plan">Plan de pensiones
+                <input type="checkbox" name="fondos">Fondos
+                <input type="checkbox" name="acciones">Acciones
+                <input type="checkbox" name="hipoteca">Hipoteca
+                <input type="checkbox" name="préstamo">Préstamo
+                <input type="checkbox" name="seguro">Seguro de Vida</p>
+              </td>
+            </tr>
+          </table>
+          <hr>
+          <table class="prueba">
+            <tbody>
+              <tr>
+                <td>
+                  <p>Puede consultar en nuestra Web o solicitarnos toda la 
+                    Informacíon <br>
+                    Precontractual de nuestros productos. Al pulsar "Contnuar" está<br>
+                    aceptando la Cláusura de Protección de datos.<br><br>
+                    (*) Los campos marcados con asterísco son obligatorios
+                  </p>
+                </td>
+                <td><button type="submit">
+                  <img src="img/boton.jpg" alt="imagen" width="auto">
+                </button></td>
+              </tr>
+            </tbody>
+          </table>
+    </td>
+  </tr>
+</tbody>
+</table>
